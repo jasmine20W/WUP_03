@@ -56,3 +56,10 @@ summary.aov(model1)
 
 We reject the null hypothesis because the number is significantly low. The data we got was 0.000116.
 
+```{r}
+#we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
+
+Now that we have the box properly label, we can see that the 0 is only in the confidence between the front and the middle. Which tells us that the back is different than the both of them. This also shows that there is no statistically different between both the front and the middle. This is the case that both of them are the same and one is different from the others.
