@@ -37,10 +37,15 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```
   
 There are "bites" on the boxes that are on the plot above. They represent the standard deviation, which is the amount of deviations among the data.
+
 ## Numerical Summarys 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+The size of the box goes from 0 to 12 and the others go from 0 to 4.
 
 ## Inferential Tests
-
 ## Conclusions
-
+the size of the box goes from 0 to 12 and the others go from 0 to 4.
 
