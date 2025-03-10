@@ -46,6 +46,13 @@ favstats(alcohol~Seat,data=ucdavis1)
 The size of the box goes from 0 to 12 and the others go from 0 to 4.
 
 ## Inferential Tests
+
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
 ## Conclusions
-the size of the box goes from 0 to 12 and the others go from 0 to 4.
+
+We reject the null hypothesis because the number is significantly low. The data we got was 0.000116.
 
